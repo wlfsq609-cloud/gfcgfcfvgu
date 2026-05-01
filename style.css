@@ -1,0 +1,43 @@
+/* GRID LAYOUT */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "info"
+    "puzzle"
+    "footer";
+  gap: 20px;
+}
+
+/* SECTIONS */
+.info {
+  grid-area: info;
+  text-align: center;
+}
+
+.puzzle-area {
+  grid-area: puzzle;
+}
+
+/* FLEX PUZZLE */
+.puzzle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;  
+  margin: auto;
+}
+
+.puzzle img {
+  width: 100px;   
+  height: 100px;
+}
+
+/* HIDE FAULTY PIECE */
+.faulty {
+  display: none;
+}
+
+/* FOOTER */
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
